@@ -1,0 +1,105 @@
+/**************************
+          GENERAL
+**************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-size: 18px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**************************
+          NAV BAR
+**************************/
+#navbar {
+  padding: 25px 0;
+  margin:  0;
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-around;
+}
+
+#menu li {
+  margin: 0 18px;
+  display: inline-block;
+}
+
+/**************************
+          MAIN
+**************************/
+#main {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#text-intro {
+  width: 300px;
+}
+
+/************* TEXT INTRO **************/
+#text-intro {
+  align-self: center;
+  background: white;
+  width: auto;
+  z-index: 1;
+}
+
+#text-intro h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+#text-intro p {
+  margin-top: 20px;
+}
+
+#text-intro button {
+  display: block;
+  padding: 18px 20px;
+  background: orange;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+}
+
+/************* SHOES **************/
+#shoes {
+  background: red;
+  height: 70vh;
+  width: 600px;
+  position: relative
+}
+
+#shoes .shoes_img {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+#shoes #cadre {
+  position: absolute;
+  top: 50px;
+  left: -50%;
+  border: 10px solid pink;
+  width: 500px;
+  height: 500px;
+}
