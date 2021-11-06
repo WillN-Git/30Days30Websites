@@ -1,0 +1,175 @@
+/********************************
+           GENERAL
+********************************/
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+*::selection {
+  background-color: rgba(83, 98, 78, .5);
+}
+
+body {
+  width: 100%;
+  background: #E0E1DF;
+  overflow-x: hidden;
+}
+
+#container {
+  width: 85%;
+  max-width: 1150px;/* 800px */
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  #container {width: 90%}
+}
+
+.section {
+  width: 100%;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.button {
+  text-transform: uppercase;
+  border: none;
+  padding: 18px 20px;
+  background: #53624e;
+  color: #E0E1DF;
+  cursor: pointer;
+}
+
+.button-light {
+  text-transform: capitalize;
+  font-size: 18px;
+  padding: 18px 20px;
+  border: 2px solid #53624e;
+  color: #53624e;
+  background: transparent;
+  transition: .5s;
+}
+
+.button-light:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/********************************
+           NAVBAR
+********************************/
+#navbar {
+  height: 80px;
+  font-size: 1.7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/********************************
+           HEADER
+********************************/
+.header {
+  text-align: center;
+}
+
+.header h1:first-child {
+  border-top: 2px solid #53624e;
+}
+
+.header h1 {
+  font-size: 3.6em;
+  letter-spacing: 5px;
+  border-bottom: 2px solid #53624e;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+/********************************
+           BANNER
+********************************/
+#banner {
+  background: url(beach.jpg) center no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  transition: .5s;
+}
+
+/********************************
+           MAIN
+********************************/
+
+/******************* SECTION1 ********************/
+#section1 {
+  width: 60%;
+  margin: 20% auto;
+  text-align: center;
+  font-size: 2em;
+}
+
+/******************* SECTION2 ********************/
+#section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  animation-name: slideleft;
+  animation-duration: 3s;
+}
+
+#section2 img {
+  border: 1px solid #cfdbc4;
+  margin: 0 18px;
+  height: 500px;
+  min-width: 400px;
+}
+
+@keyframes slideleft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1*(400px * 3 + 18px * 3 + 18px)));
+  }
+}
+
+/******************* SECTION3 ********************/
+#section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#section3 article {
+  line-height: 30px;
+  font-size: 1.3em;
+  margin-left: 20px;
+}
+
+#section3 aside {
+  border: 1px solid black;
+  height: 100%;
+  width: auto;
+  max-width: 400px;
+}
+
+/******************* FOOTER ********************/
+#footer {
+  margin-top: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer i {
+  margin: 0 5%;
+}
