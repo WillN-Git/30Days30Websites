@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    
+    <div id="clouds-bloc" class="playground">
+      <img id="cloud1" class="playground" src="images/white-cloud.png" alt="" />
+      <img id="cloud2" class="playground" src="images/blue-cloud.png" alt="" />
+      <img id="cloud3" style="width: 200px;height: auto" class="playground" src="images/blue-cloud.png" alt="" />
+      <img id="cloud4" style="width: 180px;height: auto" class="playground" src="images/white-cloud.png" alt="" />
+    </div>
+
+    <div id="overlay" class="playground">
+      <img id="lines-bg" src="images/lines-bg.png" alt="" />
+    </div>
+
+    <main>
+      <div id="intro">
+        <h1>Science subject for elementary: <span>physical, life, and earth</span></h1>
+      </div>
+
+      <!--
+          PRESENTATION
+        ============================= -->
+
+      <div id="presentation">
+        <img id="sol" class="playground" src="images/sol.png" alt="" />
+        <img id="planet" class="playground" src="images/planet.png" alt="" />
+        <img id="blue-tree" class="playground tree" src="images/blue-tree.png" alt="" />
+        <img id="orange-tree" class="playground tree" src="images/orange-tree.png" alt="" />
+        <img id="green-tree" src="images/green-tree.png" class="playground tree" alt="" />
+        <img id="flower" src="images/flower.png" class="playground" alt="" />
+      </div>
+    </main>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!-- three js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+      integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+
+  
+    <script type="text/javascript">
+      TweenMax.from("#sol", 1.5, {
+        delay: .6,
+        x: "700",
+        ease: Expo.easeInOut
+      });
+
+      TweenMax.staggerFrom(".tree", 1.5, {
+        delay: 1,
+        y: "-10",
+        opacity: 0,
+        ease: Expo.easeInOut
+      }, .08);
+    </script>
+  </body>
+</html>
