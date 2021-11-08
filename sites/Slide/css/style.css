@@ -1,0 +1,130 @@
+/***************************
+          GENERAL
+***************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+}
+
+/***************************
+          MAIN NAV
+***************************/
+.main-nav {
+  background: white !important;
+  min-height: 80px;
+  border-radius: 40px;
+  margin-top: 20px;
+  z-index: 100 !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+.main-nav .logo {
+  float: left;
+  margin-top: 12px !important;
+  margin-left: 18px;
+  transition: all .3s ease 0s;
+}
+
+.main-nav .logo img {
+  width: 200px;
+  height: 50px;
+
+}
+
+.main-nav .nav {
+  float: right;
+  margin: 0 45px auto 0px;
+  transition: all .3s ease 0s;
+  z-index: 999;
+}
+
+.main-nav .nav li {
+  padding: 18px 18px;
+}
+
+.main-nav .nav li a {
+  display: block;
+  font-weight: 400;
+  color: #333;
+  transition: all .3s ease 0s;
+  height: 40px;
+  line-height: 40px;
+  border: transparent;
+  letter-spacing: 1px;
+}
+
+.main-nav .nav li a:hover {
+  color: deepskyblue;
+}
+
+.main-nav .menu-trigger {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 44px;
+  right: 40px;
+  width: 32px;
+  height: 40px;
+  text-shadow:-9999em;
+  z-index: 99;
+}
+
+.fluid_container {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 0;
+}
+
+
+
+
+.camera_caption {
+  top: 37%;
+  left: 5% !important;
+  font-size: 55px;
+}
+
+.camera_caption > div {
+  background: transparent !important;
+}
+
+.secondText {
+  font-size: 10px;
+  width: 300px;
+}
+
+a.btn {
+  font-size: 19px;
+  margin-top: -150px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 50px;
+}
+
+.camera_thumbs {
+  margin-top: -100px;
+  position: relative;
+  z-index: 1;
+}
+
+.camera_thumbs_cont {
+  border: 0;
+  background: rgba(0, 0, 0, .2);
+}
