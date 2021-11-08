@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    
+    <title>Fluido</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/camera.css" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!--
+        HEADER
+    ==================== -->
+    <header class="header-area header-sticky" style="position: fixed;width: 100%;z-index: 9;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <a href="#" class="logo">
+                <img src="images/logo.png" height="35px" alt="" />
+              </a>
+
+              <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work Process</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Pricing Tables</a></li>
+                <li><a href="#">Our Blog</a></li>
+              </ul>
+              <a href="" class="menu-trigger">
+                <span>Menu</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--
+        FLUID CONTAINER
+    ==================== -->
+    <div class="fluid_container">
+      <div id="camera_wrap_4" class="camera_wrap cameraCont">
+        <div data-thumb="thumbs/one.png" data-src="images/banner-12.jpg">
+          <div class="camera_caption">
+            <h3>Digital Marketing Solution</h3>
+            <p class="second-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar orci in aliquet porttitor.  
+            </p>
+            <a href="#" class="btn">Get Started now</a>
+          </div>
+        </div>
+
+        <div data-thumb="thumbs/two.png" data-src="images/03hero.jpg">
+          <div class="camera_caption">
+            <h3>We are creatin custom bla bla bla</h3>
+            <p class="second-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar orci in aliquet porttitor.  
+            </p>
+            <a href="#" class="btn">Get Started now</a>
+          </div>
+        </div>
+
+        <div data-thumb="thumbs/three.png" data-src="images/2.jpg">
+          <div class="camera_caption">
+            <h3>Best SEO Services</h3>
+            <p class="second-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar orci in aliquet porttitor.  
+            </p>
+            <a href="#" class="btn">Get Started now</a>
+          </div>
+        </div>
+
+        <div data-thumb="thumbs/five.png" data-src="images/real.jpg">
+          <div class="camera_caption">
+            <h3>Digital Marketing Solution</h3>
+            <p class="second-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar orci in aliquet porttitor.  
+            </p>
+            <a href="#" class="btn">Get Started now</a>
+          </div>
+        </div>
+
+        <div data-thumb="thumbs/six.png" data-src="images/ok.jpg">
+          <div class="camera_caption">
+            <h3>7 Supports</h3>
+            <p class="second-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar orci in aliquet porttitor.  
+            </p>
+            <a href="#" class="btn">Get Started now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <!-- jQuery easin --> 
+    <script src="scripts/jquery.easing.1.3.js"></script>
+    <!-- Camera -->
+    <script src="scripts/camera.min.js"></script>
+    <!-- My Script -->
+    <script>
+      $(function() {
+        $('#camera_wrap_4').camera({
+          alignment: 'bottomRight',
+          height: 'auto',
+          loader: 'bar',
+          pagination: false,
+          thumbnails: true,
+          hover: false,
+          opacityOnGrid: false,
+          imagePath: '..//images'
+        });
+      });
+    </script>
+  </body>
+</html>
