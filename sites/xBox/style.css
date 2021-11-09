@@ -1,0 +1,46 @@
+/***********************
+        GENERAL
+***********************/
+* {
+  box-sizing: border-box;
+  color: #fff
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/***********************
+        NAVBAR
+***********************/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+
+#menu li {
+  display: inline-block;
+  margin-left: 18px;
+}
+
+#menu li a {
+  color: white;
+  transition: all .3s ease 0s;
+}
+
+#menu li a:hover {
+  color: green;
+}
+
+.navbar .icon-container i {
+  margin-left: 10px;
+}
