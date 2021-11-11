@@ -1,0 +1,293 @@
+/***********************
+
+          TAGS
+
+************************/
+* {
+    background : none;
+    font-family: Arial, Sans-Serif;
+    letter-spacing: 2px;
+}
+
+body {
+    background: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0
+}
+
+nav, header, section, footer {
+    width: 100%;
+    padding : 0;
+    margin : 0;
+    border: none
+}
+
+ul {
+    list-style : none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, ul{
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+}
+
+/***********************
+
+         CLASS
+
+************************/
+.super-container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.orange-link {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 30px;
+    background : orange;
+}
+
+.orange {
+    color: orange;
+}
+
+.logo {
+    font-family: 'Crete Round', Serif;
+}
+
+/***********************
+
+          NAV
+
+************************/
+#navbar {
+    height: 120px;
+}
+
+#navbar .super-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .logo {
+    font-size: 2.3em;
+}
+
+#navbar #menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+#navbar a {
+    color: black;
+}
+
+/***********************
+
+         HEADER
+
+************************/
+header#banner {
+    height: 35em;
+    background-image: url('images/main.jpg');
+    background-position: center;
+    background-attachment: cover;
+}
+
+#banner .super-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .title {
+    font-size: 2.9em;
+    margin: .5em 0;
+}
+
+#banner .orange-link {
+    font-size: 1.2em;
+}
+
+/***********************
+
+        SECTION1
+
+************************/
+#section1 {
+    padding: 4.5em 0;
+}
+
+#section1 .title {
+    margin-top: 20px;
+}
+
+#section1 .super-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section1 .super-container ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+}
+
+/***********************
+
+        SECTION2
+
+************************/
+#section2 {
+    background: #efefef;
+    padding: 5em 0;
+}
+
+#section2 .super-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section2 article {
+    width: 400px;
+    height: 270px;
+    border: none;
+    border-radius: 5px;
+}
+
+#section2 .white-cover {
+    width: 180px;
+    height: 100%;
+    background: rgba(255, 255, 255, .7);
+    border-radius: 5px 0 0 5px;
+    padding: 0 10px;
+}
+
+#section2 .white-cover h2, #section2 .white-cover p {
+    display: inline-block;
+    margin: 15px 0;
+}
+
+#section2 .white-cover p {
+    font-style: italic;
+}
+
+#section2 .white-cover hr {
+    background: grey;
+    display: block;
+    margin: 3px;
+}
+
+#section2 .white-cover a {
+    display: block;
+    margin-top: -5px;
+}
+
+#article-1, #article2 {
+    background-image: url('images/article-image-1.jpg');
+    background-position: center;
+    background-attachment: cover;
+}
+
+#article-2 {
+    background-image: url('images/article-image-2.jpg');
+    background-position: 100% 50%;
+}
+
+/***********************
+
+        SECTION3
+
+************************/
+#section3 {
+    padding: 7em 0;
+}
+
+#section3 hr {
+    background: #77b5fe;
+    width: 350px;
+    margin: 18px auto;
+}
+
+#section3 form {
+    width: 100%;
+    margin: 18px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section3 form .input input {
+    outline: none;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 2px;
+    margin-top: 25px;
+    height: 28px;
+}
+
+#section3 form input:focus {
+    border-color: #77b5fe;
+}
+
+#section3 form .input {
+    margin: 0 10px;
+}
+
+#button-msg {
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 2px;
+    background: #77b5fe;
+    margin-top: 25px;
+    height: 30px;
+    width: auto;
+}
+
+#button-msg:hover {
+    cursor: pointer;
+}
+
+/***********************
+
+        FOOTER
+
+************************/
+footer {
+    background: #111;
+    padding: 2.5em 0;
+    color: white;
+}
+
+footer h1 {
+    font-size: 3em;
+}
