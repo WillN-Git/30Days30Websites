@@ -1,0 +1,90 @@
+/*****************************
+          GENERALITES
+*****************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+@font-face {
+  font-family: 'Mismo Black';
+  src: local('Mismo Black'), url('fonts/Mismo Black.ttf') format('truetype');
+}
+
+* {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: white;
+  overflow: hidden
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vh {
+  height: 100vh;
+}
+
+#container1 {
+  background: #fff;
+}
+
+#container2 {
+  background: #555 url('cherry.jpg') center no-repeat;
+  background-size: cover;
+}
+
+/*****************************
+          NAVBAR
+*****************************/
+nav {
+  padding: 20px 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu *,
+.bi-list::before,
+.bi-search::before {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/*****************************
+          CONTENT
+*****************************/
+.red-button {
+  background: red;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 4.5em;
+  color: white;
+  text-align: center;
+  z-index: 10000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
