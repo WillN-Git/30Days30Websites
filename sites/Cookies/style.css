@@ -1,0 +1,172 @@
+/****************************
+        GENERALITES
+****************************/
+:root {
+  --color-theme: #e0c59f;
+  --main-text-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--main-text-color, #fff);
+}
+
+body {
+  background: var(--color-theme, #e0c59f);
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.text-black {
+  color: black;
+}
+
+.btn {
+  background: #000;
+  color: var(--main-text-color, #fff);
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 1.1em
+}
+
+.deviant {
+  position: absolute;
+}
+
+/****************************
+          NAV
+****************************/
+nav {
+  padding: 18px 0;
+}
+
+nav h1, 
+nav .bi {
+  color: black;
+}
+
+.nav-link {
+  color: var(--main-text-color, #fff)
+}
+
+
+/****************************
+          ASIDE
+****************************/
+aside {
+  position: absolute;
+  
+}
+
+aside.left {
+  top: 90%;
+  left: 5px;
+  transform-origin: top left;
+  transform: rotate(-90deg)
+}
+
+aside.right {
+  top: 75%;
+  right: 5px;
+  transform-origin: top right;
+  transform: rotate(90deg);
+}
+
+/****************************
+          HEADER
+****************************/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .title {
+  
+  font-size: 5em;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+/****************************
+          HEADER
+****************************/
+#triangle {
+  display : inline-block;
+  height : 0;
+  width : 0;
+  border-top : 150px solid transparent;
+  border-right : 947px solid #efa42d;
+  border-bottom : 150px solid transparent;
+
+  position: absolute;
+  top: 30%;
+  right: 0;
+  z-index: -1;
+  transform: translateX(47px) rotate(-12deg);
+}
+
+header {
+  height: 60vh;
+}
+
+
+/****************************
+          MAIN
+****************************/
+.content {
+  background: #ede7df;
+  padding: 30px 60px;
+  position: relative;
+}
+
+.content article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.first.btn.deviant {
+  top: -1.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-description {
+  width: 100%
+}
+
+img.milkshake {
+  width: auto;
+  height: 560px;
+  margin-left: 27%;
+}
+
+.info-bloc {
+  width: 100%;
+  background: var(--color-theme, #e0c59f);
+  padding: 18px 10px;
+  position: relative;
+}
+
+.info-bloc .deviant {
+  top: 25%;
+  right: -17%;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 2.5em;
+  font-weight: 900;
+}
